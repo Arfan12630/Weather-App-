@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    border-spacing: border-box; 
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    background-image: url(./Jpeg/weather.jpg);
+    background-size: cover;
+    background-position: top left;
+
+}
+.info_container{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+    
+}
+header{
+    align-items:center; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 15px 15px ;
+}
+
+header input{
+    width:100%;
+    max-width: 280px;
+    padding: 10px 15px; 
+    border:none;
+    outline:none; 
+    background-color: black;
+    border-radius: 16px 0px 16px 0px; 
+    border-bottom:3px solid #DF8E00; 
+
+    color:black;
+    font-size:20px; 
+    font: weight 500; 
+    transition:0.2 ease-out; 
+}
+
+header input:focus{
+    background-color: rgba(255,255,255,0.6);
+}
+.main{
+    flex: 1 1 100%; 
+    padding:25px 25px 50px; 
+    display: flex;
+    flex-direction:column; 
+    align-items:center; 
+    text-align:center; 
+
+}
+
+.location .city{
+    color:white;
+    font-size:35px; 
+    font-weight: 500;
+    margin-bottom:5px; 
+}
+
+.location .date{
+    color:white;
+    font-size:16px; 
+
+}
+
+.current_status .temperature{
+    color:white; 
+    font-size:105px; 
+    font-weight:900; 
+    margin:30px 0px; 
+    text-shadow:black; 
+
+}
+.current_status .temperature span{
+    font-weight:500; 
+}
+
+.current_status .conditions{
+    color:white; 
+    font-size:23px; 
+    font-weight:500; 
+    text-shadow:black; 
+    
+}
+
+
